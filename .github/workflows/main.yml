@@ -18,6 +18,13 @@ jobs:
         with:
           dotnet-version: 6.0.x  # Replace with your desired .NET version
 
+      - name: Set Environment Variables
+        run: |
+          echo "export MY_VARIABLE=123" >> $GITHUB_ENV
+          echo "export ASPNETCORE_ENVIRONMENT=Production" >> $GITHUB_ENV
+        env:
+          MY_SECRET: ${{ secrets.asdfgh }}
+
       - name: Restore dependencies and build
         run: |
           dotnet restore
