@@ -23,8 +23,8 @@ jobs:
           dotnet restore
           dotnet build --configuration Release
 
-      - name: Create and Upload Artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: build-artifact
-          path: D:\anu1\Downloads\6.3.0\6.3.0\aspnet-core\src\BoilerPlateCrud.Web.Mvc # Replace with the correct relative path
+      - name: Create and Upload Artifact for BoilerPlate.Core
+  uses: actions/upload-artifact@v2
+  with:
+    name: build-artifact-core
+    path: src/BoilerPlate.Core/bin/Release
