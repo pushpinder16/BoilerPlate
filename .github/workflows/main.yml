@@ -20,10 +20,10 @@ jobs:
 
       - name: Set Environment Variables
         run: |
-          echo "export MY_VARIABLE=123" >> $GITHUB_ENV
+          echo "export MY_VARIABLE=456" >> $GITHUB_ENV
           echo "export ASPNETCORE_ENVIRONMENT=Production" >> $GITHUB_ENV
         env:
-          MY_SECRET: ${{ secrets.asdfgh }}
+          MY_SECRET: ${{ secrets.ghghk }}
 
       - name: Restore dependencies and build
         run: |
