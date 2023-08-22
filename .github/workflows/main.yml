@@ -27,4 +27,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: build-artifact
-          path: bin/Release  # Replace with the correct relative path
+          path: D:\anu1\Downloads\6.3.0\6.3.0\aspnet-core\src\BoilerPlateCrud.Web.Mvc # Replace with the correct relative path
