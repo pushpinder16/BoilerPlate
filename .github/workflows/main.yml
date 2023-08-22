@@ -27,4 +27,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: build-artifact
-          path: src/BoilerPlate.Core/bin/Release  # Replace with the correct relative path
+          path: src/BoilerPlateCrud.Web.Mvc/bin/Release/net5.0 # Replace with the correct relative path
