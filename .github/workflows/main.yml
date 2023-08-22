@@ -26,6 +26,5 @@ jobs:
       - name: Create and Upload Artifact
         uses: actions/upload-artifact@v2
         with:
-          - name: Debug Build Output
-  run: |
-    ls -R bin/Release
+          name: build-artifact
+          path: bin/Release  # Replace with the correct relative path
